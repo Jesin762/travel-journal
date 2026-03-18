@@ -1,0 +1,145 @@
+.followers-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 90px 20px;
+  min-height: 100vh;
+  background: #f5f6fa;
+  transition: background 0.3s ease;
+}
+
+.followers-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  transition: background 0.3s ease;
+}
+
+/* Top Back Button */
+
+.followers-top {
+  margin-bottom: 15px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #4e73df;
+  font-weight: 500;
+}
+
+/* Tabs */
+
+.followers-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.followers-header button {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.followers-header button.active {
+  border-bottom: 3px solid #4e73df;
+  font-weight: bold;
+  color: #4e73df;
+}
+
+/* List */
+
+.followers-list {
+  margin-top: 10px;
+}
+
+.follower-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.follower-item:hover {
+  background: #f2f2f2;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #4e73df;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+}
+
+.empty-text {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}
+
+/* ================= DARK MODE ================= */
+
+.followers-wrapper.dark {
+  background: #121212;
+}
+
+.followers-wrapper.dark .followers-container {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.followers-wrapper.dark .followers-header {
+  border-bottom: 1px solid #333;
+}
+
+.followers-wrapper.dark .followers-header button {
+  color: #f1f1f1;
+}
+
+.followers-wrapper.dark .followers-header button.active {
+  border-bottom: 3px solid #4e73df;
+  color: #4e73df;
+}
+
+.followers-wrapper.dark .follower-item:hover {
+  background: #2a2a2a;
+}
+
+.followers-wrapper.dark .user-info p {
+  color: #bbbbbb;
+}
+
+.followers-wrapper.dark .back-btn {
+  color: #4e73df;
+}

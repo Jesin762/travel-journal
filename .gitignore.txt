@@ -1,0 +1,6 @@
+travel_env/
+node_modules/
+.env
+__pycache__/
+*.pyc
+db.sqlite3

@@ -1,0 +1,107 @@
+.write-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f5f6fa;   /* light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.write-card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.write-card h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4e73df;
+}
+
+.publish-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #4e73df;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.publish-btn:hover {
+  background: #2e59d9;
+}
+/* ============================= */
+/* 🌙 DARK MODE STYLES */
+/* ============================= */
+
+.dark-theme .write-wrapper {
+  background-color: #121212;
+}
+
+.dark-theme .write-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.dark-theme .form-group label {
+  color: #dddddd;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+.dark-theme .form-group input:focus,
+.dark-theme .form-group textarea:focus {
+  border-color: #6c8cff;
+}
+
+.dark-theme .publish-btn {
+  background: #6c8cff;
+}
+
+.dark-theme .publish-btn:hover {
+  background: #4e73df;
+}

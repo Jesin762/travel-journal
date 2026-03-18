@@ -1,0 +1,199 @@
+/* ================= WRAPPER ================= */
+.edit-profile-wrapper {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: background 0.3s ease;
+}
+
+/* Light Mode */
+.edit-profile-wrapper {
+  background: #f5f6fa;
+}
+
+/* Dark Mode */
+.dark-theme .edit-profile-wrapper {
+  background: #121212;
+}
+
+/* ================= CARD ================= */
+.edit-profile-card {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  padding: 35px 30px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Light Card */
+.edit-profile-card {
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Card */
+.dark-theme .edit-profile-card {
+  background: #1e1e1e;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= TITLE ================= */
+.edit-profile-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Light */
+.edit-profile-card h2 {
+  color: #1e293b;
+}
+
+/* Dark */
+.dark-theme .edit-profile-card h2 {
+  color: #f1f1f1;
+}
+
+/* ================= PROFILE IMAGE ================= */
+.profile-preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.profile-preview img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+  transition: transform 0.3s ease;
+}
+
+.profile-preview img:hover {
+  transform: scale(1.05);
+}
+
+/* Placeholder */
+.profile-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #1e293b;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .profile-placeholder {
+  background: #2a2a2a;
+  color: #f1f1f1;
+}
+
+/* ================= INPUTS ================= */
+.edit-profile-card input,
+.edit-profile-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Light Inputs */
+.edit-profile-card input,
+.edit-profile-card textarea {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+/* Dark Inputs */
+.dark-theme .edit-profile-card input,
+.dark-theme .edit-profile-card textarea {
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #f1f1f1;
+}
+
+/* Focus Effect */
+.edit-profile-card input:focus,
+.edit-profile-card textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ================= FILE INPUT ================= */
+.edit-profile-card input[type="file"] {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode file input */
+.dark-theme .edit-profile-card input[type="file"] {
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: #f1f1f1;
+}
+
+/* ================= BUTTON ================= */
+.edit-profile-card button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Light Button */
+.edit-profile-card button {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.edit-profile-card button:hover {
+  background: #2563eb;
+}
+
+/* Dark Button */
+.dark-theme .edit-profile-card button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.dark-theme .edit-profile-card button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= MESSAGE ================= */
+.message {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.message.success {
+  color: #22c55e;
+}
+
+.message.error {
+  color: #ef4444;
+}

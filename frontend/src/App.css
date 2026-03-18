@@ -1,0 +1,140 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   LIGHT MODE DEFAULT
+========================= */
+body {
+  background-color: #f5f6fa;
+  transition: all 0.3s ease;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   GLOBAL DARK THEME
+========================= */
+
+.dark-theme body,
+.dark-theme,
+.dark-theme .app-container {
+  background-color: #121212 !important;
+  color: #f1f1f1;
+}
+
+/* =========================
+   TEXT COLORS
+========================= */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6,
+.dark-theme p,
+.dark-theme span,
+.dark-theme label {
+  color: #f1f1f1 !important;
+}
+
+/* =========================
+   CARDS & SECTIONS
+========================= */
+.dark-theme .profile-card,
+.dark-theme .card,
+.dark-theme .about-card,
+.dark-theme .home-card,
+.dark-theme .journal-card {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+  border: 1px solid #2a2a2a;
+}
+
+/* Fix Bootstrap bg-light sections */
+.dark-theme .bg-light,
+.dark-theme section {
+  background-color: #1e1e1e !important;
+}
+
+/* =========================
+   NAVBAR (ALWAYS WHITE TEXT)
+========================= */
+.navbar {
+  background-color: #212529;
+}
+
+.dark-theme .navbar {
+  background-color: #1a1a1a !important;
+}
+
+/* Force navbar text always white */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.dark-theme input,
+.dark-theme textarea,
+.dark-theme select {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.dark-theme button {
+  background-color: #333 !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+/* =========================
+   LINKS
+========================= */
+.dark-theme a {
+  color: #9ecbff !important;
+}
+
+/* =========================
+   HERO SECTION FIX
+========================= */
+/* REMOVE old background removal (important fix) */
+
+.dark-theme .hero::before {
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("./assets/homepage2.jpg") center / cover no-repeat;
+}
+
+/* =========================
+   SMOOTH TRANSITIONS
+========================= */
+body,
+.app-container,
+.navbar,
+.profile-card,
+.card,
+button,
+input,
+textarea {
+  transition: all 0.3s ease;
+}

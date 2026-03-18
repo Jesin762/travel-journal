@@ -1,0 +1,61 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../assets/homepage2.jpg") center / cover no-repeat;
+    z-index: -1;
+}
+
+.hero-content {
+    color: white;
+}
+
+/* Sections */
+.about-section {
+    background: white;
+}
+
+.journals-section {
+    background: #f8f9fa;
+}
+
+/* Card image */
+.card-img-top {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Dark mode overrides */
+.dark-theme .about-section {
+    background: #1e1e1e;
+}
+
+.dark-theme .journals-section {
+    background: #121212;
+}
+
+.dark-theme .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-theme .journal-location {
+    color: #bbbbbb;
+}
+
+.journal-card-clickable:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}

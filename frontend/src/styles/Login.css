@@ -1,0 +1,185 @@
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* ===== PAGE WRAPPER OVERLAY FIX ===== */
+/* This ensures overlay never blocks inputs */
+.page-overlay {
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.page-overlay::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+    pointer-events: none;   /* ✅ THIS FIXES INPUT CLICK ISSUE */
+}
+
+/* ===== NAVBAR ===== */
+.simple-navbar {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 15px 30px;
+    backdrop-filter: blur(6px);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link {
+    color: #eaeaea;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== LOGIN CONTAINER ===== */
+.login-container {
+    position: relative;
+    z-index: 2;  /* ✅ Ensures it stays above overlay */
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CARD ===== */
+.card {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 16px;
+
+    background: #f1f1f1; /* light grey card */
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== HEADING ===== */
+.card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;          /* black heading */
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* ===== INPUT FIELDS ===== */
+.card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    background: #ffffff;   /* white input box */
+    color: #000000;        /* black text typing */
+    font-size: 15px;
+}
+
+/* Placeholder color */
+.card input::placeholder {
+    color: #888888;   /* grey placeholder */
+}
+
+/* Focus effect */
+.card input:focus {
+    border: 1px solid #2e6b55;
+    box-shadow: 0 0 0 2px rgba(46, 107, 85, 0.2);
+}
+
+/* ===== BUTTON ===== */
+.card button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        rgba(6, 75, 53, 0.9),
+        rgba(14, 85, 64, 0.9)
+    );
+
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(
+        135deg,
+        rgb(9, 8, 8),
+        rgb(15, 15, 13)
+    );
+}
+
+/* ===== LINKS ===== */
+.links {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: black;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== ERRORS ===== */
+.error {
+    background: rgba(255, 70, 70, 0.25);
+    color: #ffeaea;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .card {
+        margin: 15px;
+        padding: 28px;
+    }
+}
