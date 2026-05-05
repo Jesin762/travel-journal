@@ -1,6 +1,5 @@
 from pathlib import Path
 import os
-import pymysql
 from datetime import timedelta
 
 
@@ -67,7 +66,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'journal.wsgi.application'
 
-pymysql.install_as_MySQLdb()
 
 
 # ----------------------------
@@ -75,15 +73,10 @@ pymysql.install_as_MySQLdb()
 # ----------------------------
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'journaldb',
-        'USER': 'root',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # ----------------------------
 # PASSWORD VALIDATION
