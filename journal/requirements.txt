@@ -3,10 +3,12 @@ distlib==0.4.0
 Django==6.0.4
 django-cors-headers==4.9.0
 djangorestframework==3.17.1
+djangorestframework_simplejwt==5.5.1
 filelock==3.20.0
 gunicorn==25.3.0
 packaging==26.2
 platformdirs==4.5.0
+PyJWT==2.12.1
 PyMySQL==1.1.2
 sqlparse==0.5.5
 tzdata==2026.2
