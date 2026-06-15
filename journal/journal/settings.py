@@ -131,6 +131,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Allow React frontend
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://travel-journal-zeta-ten.vercel.app",
 ]
 
 # Allow cookies to be sent
@@ -139,6 +140,7 @@ CORS_ALLOW_CREDENTIALS = True
 # Trust React for CSRF
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
+    "https://travel-journal-zeta-ten.vercel.app",
 ]
 
 # Allow JS to read CSRF token

@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://jesin.pythonanywhere.com/",
+
+  baseURL: "https://travel-journal-rkzk.onrender.com/",
+
 });
 
 // Automatically attach JWT token to every request
