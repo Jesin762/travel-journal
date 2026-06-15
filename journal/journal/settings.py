@@ -109,10 +109,10 @@ USE_TZ = True
 # ----------------------------
 # STATIC FILES
 # ----------------------------
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static"
-]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+# Removed STATICFILES_DIRS since there's no custom static folder
 
 # ----------------------------
 # MEDIA FILES
