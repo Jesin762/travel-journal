@@ -23,7 +23,7 @@ function EditProfile() {
         bio: res.data.bio || "",
       });
       if (res.data.image) {
-        setPreviewImage(`http://127.0.0.1:8000${res.data.image}`);
+        setPreviewImage(`https://travel-journal-rkzk.onrender.com${res.data.image}`);
       }
     } catch (err) {
       console.error("Failed to fetch profile:", err);

@@ -13,7 +13,7 @@ function Explore() {
   const [filteredUsers, setFilteredUsers] = useState([]);
 
   const navigate = useNavigate();
-  const BASE_URL = "http://127.0.0.1:8000";
+  const BASE_URL = "https://travel-journal-rkzk.onrender.com";
 
   useEffect(() => {
     fetchCurrentUser();

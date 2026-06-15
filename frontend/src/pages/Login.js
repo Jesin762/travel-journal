@@ -18,7 +18,7 @@ function Login({ setUser }) {
 
     try {
       // ✅ CORRECT JWT LOGIN ENDPOINT
-      const response = await fetch("http://127.0.0.1:8000/api/login/", {
+      const response = await fetch("https://travel-journal-rkzk.onrender.com/api/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,7 +34,7 @@ function Login({ setUser }) {
         localStorage.setItem("refresh", data.refresh);
 
         // ✅ Fetch profile
-        const profileRes = await fetch("http://127.0.0.1:8000/api/profile/", {
+        const profileRes = await fetch("https://travel-journal-rkzk.onrender.com/api/profile/", {
           headers: {
             Authorization: `Bearer ${data.access}`,
           },

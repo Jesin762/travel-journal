@@ -34,7 +34,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/credentials/api/register/",   // ✅ FIXED URL
+        "https://travel-journal-rkzk.onrender.com/credentials/api/register/",  
         {
           method: "POST",
           headers: {

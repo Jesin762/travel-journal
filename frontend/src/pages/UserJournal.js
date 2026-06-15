@@ -13,7 +13,7 @@ function UserJournal() {
   const [commentText, setCommentText] = useState({});
   const [openComments, setOpenComments] = useState({});
 
-  const BASE_URL = "http://127.0.0.1:8000";
+  const BASE_URL = "https://travel-journal-rkzk.onrender.com";
 
   useEffect(() => {
     fetchCurrentUser();

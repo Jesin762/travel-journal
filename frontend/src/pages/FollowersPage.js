@@ -12,7 +12,7 @@ function FollowersPage({ darkMode }) {
   const [following, setFollowing] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const BASE_URL = "http://127.0.0.1:8000";
+  const BASE_URL = "https://travel-journal-rkzk.onrender.com";
 
   const getImage = (path) => {
     if (!path) return null;
