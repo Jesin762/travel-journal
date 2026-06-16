@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 from datetime import timedelta
+import cloudinary
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
+
 
     # Third party
     'corsheaders',
@@ -165,3 +169,11 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dgjjpcww0',
+    'API_KEY': '147787184793398',
+    'API_SECRET': 'CHRBylPHV3emuioUSmMWyEm1TkU',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

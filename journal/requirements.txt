@@ -14,3 +14,5 @@ PyMySQL==1.1.2
 sqlparse==0.5.5
 tzdata==2026.2
 virtualenv==20.35.3
+cloudinary
+django-cloudinary-storage
