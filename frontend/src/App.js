@@ -47,7 +47,7 @@ function App() {
       }
 
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/profile/", {
+        const res = await fetch("https://travel-journal-rkzk.onrender.com/api/profile/", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -9,7 +9,7 @@ function JournalCard({ journal }) {
         <div className="col-md-4">
           {journal.image && (
             <img
-              src={`http://127.0.0.1:8000${journal.image}`}
+              src={`https://travel-journal-rkzk.onrender.com${journal.image}`}
               alt={journal.title}
               className="img-fluid rounded"
             />
